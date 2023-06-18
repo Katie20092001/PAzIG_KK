@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPetActivity"
+    android:background="@color/blueBG">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PetsCare"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="50sp"
+        android:textColor="@color/darkGray"
+        android:gravity="center"/>
+
+
+    <ImageButton
+        android:id="@+id/image_view_return"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:clickable="true"
+        android:background="@color/blueBG"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wprowadź\n imię zwierzaka:"
+        android:layout_marginTop="310dp"
+        android:textSize="25sp"
+        android:textColor="@color/darkGray"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/edittext_rounded"
+        android:maxLines="3"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        android:inputType="text|textCapCharacters"
+        android:gravity="center"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/whiteNOT"
+        android:textSize="30sp"
+        android:onClick="savePetName"/>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicineReview"
+    android:background="@color/blueBG">
+
+    <Button
+        android:id="@+id/buttonAddMedicine"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded"
+        android:gravity="center"
+        android:text="Dodaj nowy lek"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:onClick="addMedicine"/>
+
+    <ListView
+        android:id="@+id/list_view_medicines"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_rounded"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/buttonDeletePet"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="650dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_rounded"
+        android:gravity="center"
+        android:text="Usuń informacje o zwierzaku"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:textAllCaps="false"
+        android:onClick="deletePet"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PetsCare"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginTop="700dp"
+        android:textSize="20sp"
+        android:textColor="@color/darkGray"
+        android:gravity="center"/>
+
+
+    <ImageButton
+        android:id="@+id/image_view_return_vol3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:clickable="true"
+        android:background="@color/blueBG"/>
+
+
+
+</RelativeLayout>
